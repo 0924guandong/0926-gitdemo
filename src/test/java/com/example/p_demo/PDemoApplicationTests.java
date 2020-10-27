@@ -51,6 +51,8 @@ class PDemoApplicationTests {
         target.setCreateTime(new Date());
         target.setUpdateTime(new Date());
 
+        System.out.println("测试回退");
+
         List<Books> list = new ArrayList<>();
         list.add(books);
         list.add(target);
