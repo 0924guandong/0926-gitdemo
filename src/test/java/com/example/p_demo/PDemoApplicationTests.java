@@ -42,15 +42,23 @@ class PDemoApplicationTests {
     @Test
     public void mo1(){
         Books books = new Books();
-        books.setId("5f903dda0e766875e6f0db1e");
+        books.setId("1");
         books.setName("dada");
 
         Books target = new Books();
+        target.setId("2");
         target.setName("测试修改");
         target.setCreateTime(new Date());
         target.setUpdateTime(new Date());
 
-        mongoService.updateInsert(books,target);
+        List<Books> list = new ArrayList<>();
+        list.add(books);
+        list.add(target);
+
+        Map<String, Books> collect = list.stream().collect(Collectors.toMap(Books::getId, n -> n));
+        System.out.println(collect);
+
+//        mongoService.updateInsert(books,target);
 
 //        mongoService.deleteBooks();
 
