@@ -51,9 +51,7 @@ class PDemoApplicationTests {
         target.setCreateTime(new Date());
         target.setUpdateTime(new Date());
 
-        System.out.println("测试 上传 回滚");
-
-        System.out.println("测试回退");
+        System.out.println("已经回退Push");
 
         List<Books> list = new ArrayList<>();
         list.add(books);
