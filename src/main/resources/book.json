@@ -1,0 +1,25 @@
+{
+  "id": 1,
+  "name": null,
+  "author": {
+    "firstName": "Abc",
+    "lastName": "Xyz"
+  },
+  "tags": [
+    "Java",
+    "Network"
+  ],
+  "map": {
+    "demo": {
+      "firstName": "Abc",
+      "lastName": "Xyz"
+    }
+  },
+  "str": [
+    "abc",
+    "def",
+    "uio"
+  ],
+  "pubDate": "2016-09-01",
+  "isbn": "978-7-111-54742-6"
+}
